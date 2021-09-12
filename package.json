@@ -14,5 +14,8 @@
     "e-commerce"
   ],
   "author": "Felipe Bessa Souto de Almeida",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
