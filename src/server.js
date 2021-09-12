@@ -1,10 +1,8 @@
 'use strict'
 
-const express = require('express');
-const app = express();
-const port = 31912;
+import app from './app.js';
 
-app.get('/', (req, res) => res.send('hello, world!'));
+const port = 31912;
 
 app.listen(port, (err) => {
     if (err) return console.error('erro');
