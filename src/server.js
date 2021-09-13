@@ -1,6 +1,6 @@
 'use strict'
 
-import app from './app.js';
+const app = require ('./app.js');
 
 const port = 31912;
 
