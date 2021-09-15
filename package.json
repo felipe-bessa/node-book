@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A simple NodeJS API for e-commerce, developed with TDD approach",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node src/server.js",
     "test": "jest",
@@ -20,6 +19,7 @@
   "author": "Felipe Bessa Souto de Almeida",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.0.5"
   },
