@@ -1,14 +1,13 @@
 'use strict'
 require('dotenv').config();
+const mongoose = require('mongoose');
 
 const config = require('./config');
 
-const app = require ('./app.js');
+const kickstartApplication = require('./kickstart');
 
-//const port = 31912;
-
-app.listen(config.app.port, (err) => {
-    if (err) return console.error('erro');
-
-    console.log(`Running at: http://localhost:${config.app.port}/`);
-});
+if(config.db.connectionString) {
+    mongoose.connect(config.db.connectionString, kickstartApplication());
+} else {
+    console.log('No connection string provided');
+}
