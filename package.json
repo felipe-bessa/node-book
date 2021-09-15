@@ -20,7 +20,8 @@
   "author": "Felipe Bessa Souto de Almeida",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5"
   },
   "devDependencies": {
     "jest": "^27.1.1",
